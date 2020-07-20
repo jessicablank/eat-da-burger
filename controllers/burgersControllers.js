@@ -17,20 +17,19 @@ router.get("/", (req, res) => {
 });
 
 router.post("/api/burgers", (req, res) => {
-  burger.create({ name: req.body.name }, (result) => {
-    // Send back the ID of the new quote
+  burger.create({ burger_name: req.body.burger_name, devoured: req.body.devoured }, (result) => {
     res.json({ id: result.insertId });
   });
 });
 
 
-router.put("/api/cats/:id/sleepy", (req, res) => {
+router.put("/api/cats/:id", (req, res) => {
   const condition = { id: req.params.id };
-  const update = { sleepy: req.body.value };
+  const update = { devoured: req.body.value };
 
-  cat.update(update, condition, (result) => {
+  burgers.update(update, condition, (result) => {
     if (result.affectedRows === 0) {
-      // If no rows were affected, then the ID must not exist, so 404
+
       return res.status(404).end();
     }
     res.status(200).end();

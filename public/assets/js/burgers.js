@@ -3,13 +3,9 @@ $(() => {
   //Devour button click
     $(".change-devour").on("click", function () {
       const id = $(this).data("id");
-
-      const newDevourState = { value: true };
-  
-      // Send the PUT request.
-      $.ajax(`/api/burger/${id}`, {
+     
+      $.ajax(`/api/burger/${id}/devour`, {
         type: "PUT",
-        data: JSON.stringify(newDevourState),
         contentType: "application/json; charset=UTF-8",
       }).then(() => {
         location.reload();
@@ -24,14 +20,12 @@ $(() => {
         devoured: 0
       };
   
-      $.ajax("/api/burgers", {
+      $.ajax("/api/burger", {
         type: "POST",
         data: newBurger,
       }).then(() => {
         location.reload();
       });
     });
-  
-
   });
   

@@ -11,25 +11,23 @@ router.get("/", (req, res) => {
     const hbsObject = {
       burgers: data,
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
-router.post("/api/burgers", (req, res) => {
+router.post("/api/burger", (req, res) => {
   burger.create({ burger_name: req.body.burger_name, devoured: req.body.devoured }, (result) => {
     res.json({ id: result.insertId });
   });
 });
 
 
-router.put("/api/burgers/:id", (req, res) => {
+router.put("/api/burger/:id/devour", (req, res) => {
   const condition = { id: req.params.id };
-  const update = { devoured: req.body.value };
+  const update = { devoured: true };
 
-  burgers.update(update, condition, (result) => {
+  burger.update(update, condition, (result) => {
     if (result.affectedRows === 0) {
-
       return res.status(404).end();
     }
     res.status(200).end();

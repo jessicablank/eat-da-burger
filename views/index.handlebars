@@ -1,42 +1,42 @@
 <header>
   <h1>Eat Da Burger!</h1>
 </header>
+<main>
+  <div class="container">
+    <section id="ready">
+      <h2>Burgers Ready to Be Devoured</h2>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </section>
 
-<div class="container">
-  <section id="ready">
-    <h2>Burgers Ready to Be Devoured</h2>
-    <ul>
-      {{#each burgers}}
-      {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-      {{/unless}}
-      {{/each}}
-    </ul>
-  </section>
+    <section id="add">
+      <h2>Add a Burger</h2>
+      <form class="create-form">
+        <div class="form-group">
+          <label for="br">Type the burger you want to eat:</label>
+          <input type="text" id="br" name="burger_name">
+        </div>
+        <button type="submit">Add Burger</button>
+      </form>
+    </section>
 
-<section id="add">
-  <h2>Add a Burger</h2>
-  <form class="create-form">
-    <div class="form-group">
-      <label for="br">Type the burger you want to eat:</label>
-      <input type="text" id="br" name="burger_name">
-    </div>
-    <button type="submit">Add Burger</button>
-  </form>
- </section>
-
-  <section id="devoured">
-    <h2>mmm...Devoured Burgers</h2>
-    <ul>
-      {{#each burgers}}
-      {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-      {{/if}}
-      {{/each}}
-    </ul>
-  </section>
-</div>
-
-<footer>
-<div class="BobsBurgers"></div>
+    <section id="devoured">
+      <h2>mmm...Devoured Burgers</h2>
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devoured=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </section>
+  </div>
+</main>
+<footer class="footer">
+  <section class= "BobsBurger"></section>
 </footer>

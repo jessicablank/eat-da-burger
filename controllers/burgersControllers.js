@@ -23,7 +23,7 @@ router.post("/api/burgers", (req, res) => {
 });
 
 
-router.put("/api/cats/:id", (req, res) => {
+router.put("/api/burgers/:id", (req, res) => {
   const condition = { id: req.params.id };
   const update = { devoured: req.body.value };
 

@@ -35,12 +35,10 @@ ul {
     width: 33%;
   }
 
-  .BobsBurgers{
-    background-image: url("..img/BobsBurgersList1.PNG");
-    margin: 0 auto;
-    height: 100px;
-     width: 100px;
+  #add{
+    background-color: lightslategray;;
   }
+
   .create-update-form {
     padding: 5px;
     margin: 5px;

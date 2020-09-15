@@ -1,50 +1,58 @@
 <div class="card text-red bg-warning border-danger" style="max-height: 300px;">
-    <div class="row no-gutters">
-        <div class="col-md-4">
-            <img src="../assets/img/BurgerFamily.jpg" class="card-img responsive-img" alt="burger family"
-                style="max-height: 250px;">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <h1 class="card-title" id="header">Eat Da Burger</h1>
-                <h3 class="card-text" id="header-text">A tribute to Bob's Burgers</h3>
-            </div>
-        </div>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="../assets/img/BurgerFamily.jpg" class="card-img responsive-img" alt="Bob's burgers family"
+        style="max-height: 250px;">
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h1 class="card-title" id="header">Eat Da Burger</h1>
+        <h3 class="card-text" id="header-text">A tribute to Bob's Burgers</h3>
+      </div>
+    </div>
+  </div>
 </div>
 <main>
-  <div class="container">
-    <section id="ready">
-      <h2>Burgers Ready to Be Devoured</h2>
-      <ul>
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img" src="../assets/img/BobsBurgersList1.PNG" alt="burger ideas">
+    </div>
+    <div class="card border-warning">
+      <h2 class="card-title text-center">Add a Burger</h2>
+      <form class="create-form">
+        <div class="form-group">
+          <label for="br">Type the burger you want to eat:</label>
+          <input type="text" id="br" name="burger_name">
+        </div>
+        <button class="text-center" type="submit">Add Burger</button>
+      </form>
+    </div>
+    <div class="card">
+      <img class="card-img" src="../assets/img/BobsBurgersList2.PNG" alt="burger ideas">
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card">
+      <h2 class="card-title text-center">Burgers Ready to Be Devoured</h2>
+      <ul class="text-center">
         {{#each burgers}}
         {{#unless devoured}}
         {{> burgers/burger-block devoured=true}}
         {{/unless}}
         {{/each}}
       </ul>
-    </section>
-
-    <section id="add">
-      <h2>Add a Burger</h2>
-      <form class="create-form">
-        <div class="form-group">
-          <label for="br">Type the burger you want to eat:</label>
-          <input type="text" id="br" name="burger_name">
-        </div>
-        <button type="submit">Add Burger</button>
-      </form>
-    </section>
-
-    <section id="devoured">
-      <h2>mmm...Devoured Burgers</h2>
-      <ul>
+    </div>
+    <div class="card">
+      <h2 class="card-title text-center">mmm...Devoured Burgers</h2>
+      <ul class="text-center">
         {{#each burgers}}
         {{#if devoured}}
         {{> burgers/burger-block devoured=false}}
         {{/if}}
         {{/each}}
       </ul>
-    </section>
+
+    </div>
+  </div>
   </div>
 </main>

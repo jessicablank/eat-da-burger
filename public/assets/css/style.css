@@ -31,22 +31,6 @@ ul {
     font-weight: bold;
   }
 
-  .container {
-    width: 1024px;
-    margin: 0 auto;
-  }
-
-  #ready,
-  #add,
-  #devoured{
-    float: left;
-    width: 33%;
-  }
-
-  #add{
-    background-color: lightslategray;;
-  }
-
   .create-update-form {
     padding: 5px;
     margin: 5px;

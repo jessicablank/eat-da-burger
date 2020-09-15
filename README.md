@@ -1,11 +1,11 @@
 # Eat Da Burger!
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[Link to Deployed App](https://secure-shore-09876.herokuapp.com/)
+[:hamburger: Deployed on Heroku](https://secure-shore-09876.herokuapp.com/)
 
 ## Description:  
  Allow the user to type in burgers to be prepared for devouring and then allow the user to devour them! All of this is virtual of course.
- 
+
 ![ScreenShot](https://github.com/jessicablank/eat-da-burger/blob/master/screenshot.PNG)
     
 ## Table of Contents:
@@ -16,14 +16,12 @@
 * [License](#license-info)
 
 ## Installation Instructions
-npm node modules required, specifically:
+npm node modules required so reminder to 
 
-`npm install express-handlebars` 
+```
+npm i
 
-`npm mysql`
-
-`npm express`
-
+```
 ## Future Improvements
 
 The developer plans to add more styling for fun and accessability, pictures especially. 
@@ -40,5 +38,4 @@ You can reach the author, Jessica Blankemeier,  via [github](http://github.com/j
 ## License
 Copyright 2020 - present Jessica Blankemeier.
 This project is licensed under the terms of the MIT license. 
-More information is available at [opensource.org/licenses](https://opensource.org/licenses/MIT)
-;
+More information is available at [opensource.org/licenses](https://opensource.org/licenses/MIT);

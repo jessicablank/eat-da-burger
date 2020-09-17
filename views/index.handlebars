@@ -15,6 +15,7 @@
       <div class="card-body">
         <h2 class="card-title text-center">Burgers Ready to Be Devoured</h2>
         <ul class="list-group list-group-flush">
+          {{!-- devoured is the default state of "ready to be devoured" --}}
           {{#each burgers}}
           {{#unless devoured}}
           <li class="list-group-item">{{> burgers/burger-block devoured=true}}</li>
@@ -56,7 +57,8 @@
     <div class="col-md-12">
       <div class="card-body">
         <h1 class="card-title" id="footer">Enjoy!</h1>
-        <h3 class="card-text" id="header-text">A tribute to Bob's Burgers</h3>
+        <h4 class="card-text" id="header-text">View source code on github:<a href="https://github.com/jessicablank/eat-da-burger" aria-label="link to source code on github" target="_blank" rel="noopener"> https://github.com/jessicablank/eat-da-burger</a> </h4>
+        <h5 class="card-text" id="header-text">Learn more about Bob's Burgers:<a href="https://www.fox.com/bobs-burgers/" aria-label="link to source Bob's Burgers info on fox.com" target="_blank" rel="noopener"> https://www.fox.com/bobs-burgers/</a> </h5>
       </div>
     </div>
   </div>

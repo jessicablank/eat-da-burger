@@ -1,10 +1,6 @@
 <div class="card text-red bg-warning border-danger" style="max-height: 300px;">
   <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="../assets/img/BurgerFamily.jpg" class="card-img responsive-img" alt="Bob's burgers family"
-        style="max-height: 250px;">
-    </div>
-    <div class="col-md-8">
+    <div class="col-md-12">
       <div class="card-body">
         <h1 class="card-title" id="header">Eat Da Burger</h1>
         <h3 class="card-text" id="header-text">A tribute to Bob's Burgers</h3>
@@ -15,44 +11,41 @@
 <main>
   <div class="card-group">
     <div class="card">
-      <img class="card-img" src="../assets/img/BobsBurgersList1.PNG" alt="burger ideas">
+      <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList1.PNG" alt="burger ideas">
+      <div class="card-body">
+        <h2 class="card-title text-center">Burgers Ready to Be Devoured</h2>
+        <ul class="list-group list-group-flush">
+          {{#each burgers}}
+          {{#unless devoured}}
+          <li class="list-group-item">{{> burgers/burger-block devoured=true}}</li>
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
     </div>
-    <div class="card border-warning">
-      <h2 class="card-title text-center">Add a Burger</h2>
-      <form class="create-form">
-        <div class="form-group">
-          <label for="br">Type the burger you want to eat:</label>
-          <input type="text" id="br" name="burger_name">
-        </div>
-        <button class="text-center" type="submit">Add Burger</button>
-      </form>
-    </div>
-    <div class="card">
-      <img class="card-img" src="../assets/img/BobsBurgersList2.PNG" alt="burger ideas">
-    </div>
-  </div>
-  <div class="card-group">
-    <div class="card">
-      <h2 class="card-title text-center">Burgers Ready to Be Devoured</h2>
-      <ul class="text-center">
-        {{#each burgers}}
-        {{#unless devoured}}
-        {{> burgers/burger-block devoured=true}}
-        {{/unless}}
-        {{/each}}
-      </ul>
+    <div class="card text-Center">
+      <img class="card-img-top responsive-img" src="../assets/img/BurgerFamily.jpg" alt="Bob's burgers family">
+      <div class="card-body">
+        <form class="create-form">
+          <h2 class="card-title ">Please Type Your Burger Order:</h2>
+          <div class="form-group">
+            <input class="form-control form-control-lg" type="text" id="br" placeholder="Example: Beyond Meat Dream"
+               name="burger_name"></input>
+          </div>
+          <button class="btn btn-success btn-lg btn-block" type="submit">Place Your Order!</button>
+        </form>
+      </div>
     </div>
     <div class="card">
+      <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList2.PNG" alt="burger ideas">
       <h2 class="card-title text-center">mmm...Devoured Burgers</h2>
-      <ul class="text-center">
+      <ul>
         {{#each burgers}}
         {{#if devoured}}
-        {{> burgers/burger-block devoured=false}}
+        <li>{{> burgers/burger-block devoured=false}}</li>
         {{/if}}
         {{/each}}
       </ul>
-
     </div>
-  </div>
   </div>
 </main>

@@ -6,7 +6,6 @@ const burger = {
       cb(res);
     });
   },
- 
   create: (newBurger, cb) => {
     orm.create("burgers", newBurger, (res) => {
       cb(res);
@@ -14,6 +13,11 @@ const burger = {
   },
   update: (burgerData, criteria, cb) => {
     orm.update("burgers", burgerData, criteria, (res) => {
+      cb(res);
+    });
+  },
+  delete: (condition, cb) => {
+    orm.delete("burgers", condition, (res) => {
       cb(res);
     });
   },

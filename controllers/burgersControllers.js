@@ -32,6 +32,17 @@ router.put("/api/burger/:id/devour", (req, res) => {
   });
 });
 
+router.delete("/api/burger/:id", (req, res) => {
+  const condition = { id: req.params.id };
+  
+  burger.delete(condition, (result) => {
+    if (result.affectedRows === 0) {
+      return res.status(404).end();
+    }
+    res.status(200).end();
+  });
+});
+
 
 
 // Export routes for server.js to use.

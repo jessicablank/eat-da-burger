@@ -1,5 +1,19 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(() => {
+  $(".delete-burger").on("click", function () {
+    const id = $(this).data("id");
+
+    // Send the DELETE request.
+    $.ajax(`/api/burger/${id}`, {
+      type: "DELETE",     
+    }).then(() => {
+      // Reload the page to get the updated list
+      location.reload();
+    });
+  });
+
+
+
   //Devour button click
     $(".change-devour").on("click", function () {
       const id = $(this).data("id");

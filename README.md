@@ -7,9 +7,13 @@
 [:hamburger: Deployed on Heroku: https://secure-shore-09876.herokuapp.com/](https://secure-shore-09876.herokuapp.com/)
 
 ## Description:  
- A fun way to demonstrate database Create, Read, Update, and Delete with a tribute to Bob's Burgers! Order a burger, send it back, devour it, order it again, and delete it.
+ A fun way to demonstrate mySQL database methodology with a tribute to Bob's Burgers! 
+ - CREATE: Order a burger
+ - READ: The burger will appear in the "Burgers Ready to Be Devoured" column by default. Once updated, the burger may appear in the "mmm..Devoured Burgers" column.
+ - UPDATE: The user can move the burger between columns via the *Devour It* and *Make It Again* buttons.
+ - DELETE: The user can delete the burger from the database via the **Send It Back!** and **X** buttons. 
 
- Originally a homework assignment for web-development bootcamp, now a fun project to keep mySQL skills fresh.
+ Originally a homework assignment without starter code for web-development bootcamp, now a fun project to keep mySQL skills fresh.
 
 ### Updated Application After Refactoring:
 
@@ -19,8 +23,9 @@
 
 ![ScreenShot](./screenshot.PNG)
     
-## Table of Contents:
+## More Details:
 * [Local Installation](#local-installation-instructions)
+* [File Structure](#file-structure)
 * [Technologies Used](#technologies-used)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -32,6 +37,43 @@ Clone the repo and install dependencies in terminal:
 npm i
 
 ``` 
+## File Structure
+This project uses a custom ORM (Object Relational Mapper) to connect the code to the mySQL database. 
+```
+├── config
+|  ├── connection.js
+|  └── orm.js
+├── controllers
+|  └── burgersControllers.js
+├── db
+|  ├── schema.sql
+|  └── seeds.sql
+├── models
+|  └── burger.js
+├── package-lock.json
+├── package.json
+├── public
+|  └── assets
+|     ├── css
+|     |  └── style.css
+|     ├── img
+|     |  ├── BobsBurgersList1.PNG
+|     |  ├── BobsBurgersList2.PNG
+|     |  ├── BurgerFamily.jpg
+|     |  └── favicon.ico
+|     └── js
+|        ├── burgers.js
+|        └── service-worker.js
+├── README.md
+├── server.js
+└── views
+   ├── index.handlebars
+   ├── layouts
+   |  └── main.handlebars
+   └── partials
+      └── burgers
+         └── burger-block.handlebars
+```
 ## Technologies Used
 - [BootStrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 - [NPM HandleBars](https://www.npmjs.com/package/handlebars)
@@ -42,6 +84,7 @@ npm i
 
 
 ## Tests
+*Original Criteria for MVP*
 - WHEN the user submits a burger's name, THEN the app will display the burger on the left side of the page.
 - WHEN The user clicks on the "Devour it" button, THEN correct burger will move to the right side of the page.
 - The app will store every burger in the database, whether devoured or not. 

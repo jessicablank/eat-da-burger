@@ -15,7 +15,7 @@ $(() => {
   //Devour button click
     $(".change-devour").on("click", function () {
       const id = $(this).data("id");
-      const newDevour = $(this).data("newDevour");
+      const newDevour = $(this).data("newdevour");
       const newDevourState = {value: newDevour}
      
       $.ajax(`/api/burger/${id}/devour`, {

@@ -30,6 +30,10 @@ $(() => {
   
     $(".create-form").on("submit", (event) => {
       event.preventDefault();
+      if($("#br").val().trim()=== null || $("#br").val().trim() === " " || $("#br").val().trim()==="")
+      {
+        alert("Hey! Burger Field Cannot Be Blank.");
+      } else {
       const newBurger = {
         burger_name: $("#br").val().trim(),
         devoured: 0
@@ -41,6 +45,7 @@ $(() => {
       }).then(() => {
         location.reload();
       });
+    }
     });
   });
   

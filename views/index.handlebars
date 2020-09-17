@@ -30,7 +30,7 @@
           <h2 class="card-title text-center">Please Type Your Burger Order:</h2>
           <div class="form-group">
             <input class="form-control form-control-lg" type="text" id="br" placeholder="Example: Beyond Meat Dream"
-               name="burger_name"></input>
+              name="burger_name"></input>
           </div>
           <button class="btn btn-success btn-lg btn-block" type="submit">Place Your Order!</button>
         </form>
@@ -38,14 +38,16 @@
     </div>
     <div class="card">
       <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList2.PNG" alt="burger ideas">
-      <h2 class="card-title text-center">mmm...Devoured Burgers</h2>
-      <ul class="list-group list-group-flush">
-        {{#each burgers}}
-        {{#if devoured}}
-        <li class="list-group-item">{{> burgers/burger-block devoured=false}}</li>
-        {{/if}}
-        {{/each}}
-      </ul>
+      <div class="card-body">
+        <h2 class="card-title text-center">mmm...Devoured Burgers</h2>
+        <ul class="list-group list-group-flush">
+          {{#each burgers}}
+          {{#if devoured}}
+          <li class="list-group-item">{{> burgers/burger-block devoured=false}}</li>
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
     </div>
   </div>
 </main>
@@ -53,7 +55,7 @@
   <div class="row no-gutters">
     <div class="col-md-12">
       <div class="card-body">
-        <h1 class="card-title" id="header">Enjoy!</h1>
+        <h1 class="card-title" id="footer">Enjoy!</h1>
         <h3 class="card-text" id="header-text">A tribute to Bob's Burgers</h3>
       </div>
     </div>

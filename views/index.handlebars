@@ -23,11 +23,11 @@
         </ul>
       </div>
     </div>
-    <div class="card text-Center">
+    <div class="card">
       <img class="card-img-top responsive-img" src="../assets/img/BurgerFamily.jpg" alt="Bob's burgers family">
       <div class="card-body">
         <form class="create-form">
-          <h2 class="card-title ">Please Type Your Burger Order:</h2>
+          <h2 class="card-title text-center">Please Type Your Burger Order:</h2>
           <div class="form-group">
             <input class="form-control form-control-lg" type="text" id="br" placeholder="Example: Beyond Meat Dream"
                name="burger_name"></input>
@@ -39,10 +39,10 @@
     <div class="card">
       <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList2.PNG" alt="burger ideas">
       <h2 class="card-title text-center">mmm...Devoured Burgers</h2>
-      <ul>
+      <ul class="list-group list-group-flush">
         {{#each burgers}}
         {{#if devoured}}
-        <li>{{> burgers/burger-block devoured=false}}</li>
+        <li class="list-group-item">{{> burgers/burger-block devoured=false}}</li>
         {{/if}}
         {{/each}}
       </ul>

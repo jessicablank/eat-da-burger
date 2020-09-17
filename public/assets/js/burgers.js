@@ -12,14 +12,15 @@ $(() => {
     });
   });
 
-
-
   //Devour button click
     $(".change-devour").on("click", function () {
       const id = $(this).data("id");
+      const newDevour = $(this).data("newDevour");
+      const newDevourState = {value: newDevour}
      
       $.ajax(`/api/burger/${id}/devour`, {
         type: "PUT",
+        data: JSON.stringify(newDevourState),
         contentType: "application/json; charset=UTF-8",
       }).then(() => {
         location.reload();

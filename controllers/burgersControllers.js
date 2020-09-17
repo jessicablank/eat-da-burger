@@ -22,7 +22,7 @@ router.post("/api/burger", (req, res) => {
 
 router.put("/api/burger/:id/devour", (req, res) => {
   const condition = { id: req.params.id };
-  const update = { devoured: true };
+  const update = { devoured: req.body.value };
 
   burger.update(update, condition, (result) => {
     if (result.affectedRows === 0) {

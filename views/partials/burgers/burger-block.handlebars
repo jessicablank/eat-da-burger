@@ -1,6 +1,8 @@
 <li>
 	{{burger_name}}
-		{{#if devoured}}<button type="button" class="change-devour btn btn-danger btn-sm" data-id="{{id}}">Devour It!</button>{{/if}}
+		<button type="button" class="change-devour btn btn-danger btn-sm" data-id="{{id}}">
+			{{#if devoured}}Devour It!{{else}}Make it Again!{{/if}}
+		</button>
 	</button>
 		{{#if devoured}}<button type="button" class="btn btn-dark btn-sm" data-id="{{id}}">Send It Back</button>{{/if}}
 	</button>

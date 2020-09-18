@@ -14,7 +14,7 @@
       <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList1.PNG" alt="burger ideas">
       <div class="card-body">
         <h2 class="card-title text-center">Burgers Ready to Be Devoured</h2>
-        <ul class="list-group list-group-flush">
+        <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
           {{!-- devoured is the default state of "ready to be devoured" --}}
           {{#each burgers}}
           {{#unless devoured}}
@@ -41,7 +41,7 @@
       <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList2.PNG" alt="burger ideas">
       <div class="card-body">
         <h2 class="card-title text-center">mmm...Devoured Burgers</h2>
-        <ul class="list-group list-group-flush">
+        <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
           {{#each burgers}}
           {{#if devoured}}
           <li class="list-group-item">{{> burgers/burger-block devoured=false}}</li>

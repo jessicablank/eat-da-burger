@@ -11,7 +11,7 @@
  - CREATE: Order a burger
  - READ: The burger will appear in the "Burgers Ready to Be Devoured" column by default. Once updated, the burger may appear in the "mmm..Devoured Burgers" column.
  - UPDATE: The user can move the burger between columns via the *Devour It* and *Make It Again* buttons.
- - DELETE: The user can delete the burger from the database via the **Send It Back!** and **X** buttons. 
+ - DELETE: The user can delete the burger from the database via the *Send It Back!* and *X* buttons. 
 
  Originally a homework assignment without starter code for web-development bootcamp, now a fun project to keep mySQL skills fresh.
 

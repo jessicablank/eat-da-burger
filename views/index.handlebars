@@ -9,47 +9,65 @@
   </div>
 </header>
 <main>
-  <div class="card-columns">
-    <div class="card">
-      <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList1.PNG" alt="burger ideas">
-      <div class="card-body">
-        <h2 class="card-title text-center">Burgers Ready to Be Devoured</h2>
-        <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
-          {{!-- devoured is the default state of "ready to be devoured" --}}
-          {{#each burgers}}
-          {{#unless devoured}}
-          <li class="list-group-item">{{> burgers/burger-block devoured=true}}</li>
-          {{/unless}}
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top responsive-img" src="../assets/img/BurgerFamily.jpg" alt="Bob's burgers family">
-      <div class="card-body">
-        <form class="create-form">
-          <h2 class="card-title text-center">Please Type Your Burger Order:</h2>
-          <div class="form-group">
-            <input class="form-control form-control-lg" type="text" id="br" placeholder="Example: Beyond Meat Dream"
-              name="burger_name"></input>
+  <div class="container-fluid">
+    <section class="row no-gutters">
+      <div class="col-lg-4">
+        <div class="card">
+          <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList1.PNG" alt="burger ideas">
+          <div class="card-body">
+            <h2 class="card-title text-center">Burgers Ready to Be Devoured</h2>
+            <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
+              {{!-- devoured is the default state of "ready to be devoured" --}}
+              {{#each burgers}}
+              {{#unless devoured}}
+              <li class="list-group-item">{{> burgers/burger-block devoured=true}}</li>
+              {{/unless}}
+              {{/each}}
+            </ul>
           </div>
-          <button class="btn btn-success btn-lg btn-block" type="submit">Place Your Order!</button>
-        </form>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList2.PNG" alt="burger ideas">
-      <div class="card-body">
-        <h2 class="card-title text-center">mmm...Devoured Burgers</h2>
-        <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
-          {{#each burgers}}
-          {{#if devoured}}
-          <li class="list-group-item">{{> burgers/burger-block devoured=false}}</li>
-          {{/if}}
-          {{/each}}
-        </ul>
+      <div class="col-lg-4">
+        <div class="card">
+          <img class="card-img-top responsive-img" src="../assets/img/BurgerFamily.jpg" alt="Bob's burgers family">
+          <div class="card-body">
+            <form class="create-form">
+              <h2 class="card-title text-center">Please Type Your Burger Order:</h2>
+              <div class="form-group">
+                <input class="form-control form-control-lg" type="text" id="br" placeholder="Example: Beyond Meat Dream"
+                  name="burger_name"></input>
+              </div>
+              <button class="btn btn-success btn-lg btn-block" type="submit">Place Your Order!</button>
+            </form>
+
+            {{!-- Alert if burger field is empty --}}
+            <div class="alert alert-danger d-none" role="alert">
+              <strong>Hey! You Didn't Order a Burger! Please Try Again.</strong>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            {{!-- End Alert --}}
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList2.PNG" alt="burger ideas">
+          <div class="card-body">
+            <h2 class="card-title text-center">mmm...Devoured Burgers</h2>
+            <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
+              {{#each burgers}}
+              {{#if devoured}}
+              <li class="list-group-item">{{> burgers/burger-block devoured=false}}</li>
+              {{/if}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </div>
 </main>
 <footer class="card text-red bg-warning border-danger" style="max-height: 300px;">

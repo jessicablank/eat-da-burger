@@ -32,7 +32,7 @@ $(() => {
       event.preventDefault();
       if($("#br").val().trim()=== null || $("#br").val().trim() === " " || $("#br").val().trim()==="")
       {
-        alert("Hey! Burger Field Cannot Be Blank.");
+        $('.alert').removeClass('d-none').addClass('show');
       } else {
       const newBurger = {
         burger_name: $("#br").val().trim(),

@@ -63,7 +63,6 @@ This project uses a custom ORM (Object Relational Mapper) to connect the code to
 |     |  └── favicon.ico
 |     └── js
 |        ├── burgers.js
-|        └── service-worker.js
 ├── README.md
 ├── server.js
 └── views

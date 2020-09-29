@@ -41,7 +41,7 @@ function getBurger(){
 
   
   let currentRandomBurger = RandomBurgerNames[Math.floor(Math.random()*RandomBurgerNames.length)]
-  console.log(currentRandomBurger)
+  console.log("The ChalkBoard Says: " + currentRandomBurger)
   randomBurgerOutput.value=currentRandomBurger;
 }
 

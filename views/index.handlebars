@@ -13,9 +13,8 @@
     <section class="row no-gutters">
       <div class="col-lg-4">
         <div class="card">
-          <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList1.PNG" alt="burger ideas">
+          <h2 class="card-header bg-primary text-center text-white">Burgers Ready to Be Devoured</h2>
           <div class="card-body">
-            <h2 class="card-title text-center">Burgers Ready to Be Devoured</h2>
             <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
               {{!-- devoured is the default state of "ready to be devoured" --}}
               {{#each burgers}}
@@ -50,18 +49,21 @@
             </div>
             {{!-- End Alert --}}
             <br>
-            <h2 class="card-title text-center">Need Inspiration?</h2>
-            <input class="form-control mb-1" title="Random Burger" type="text" aria-describedby="Random Burger" id="randomBurgerOutput" placeholder="Burger Idea" readonly="" />
-            <button class="btn btn-primary btn-lg btn-block" title="Generate a Random Burger" onClick="getBurger()">
-              See a Random Burger!</button>
+            <div>
+              <h2 class="card-title text-center">Need Inspiration?</h2>
+              <input class="form-control mb-1" title="Random Burger" type="text" aria-describedby="Random Burger"
+                id="randomBurgerOutput" placeholder="Get Burger of the Day" readonly="" />
+              <button class="btn btn-primary btn-lg btn-block" title="Generate a Random Burger" onClick="getBurger()">
+                Update the ChalkBoard!</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card">
-          <img class="card-img-top responsive-img" src="../assets/img/BobsBurgersList2.PNG" alt="burger ideas">
+         <h2 class="card-header bg-primary text-center text-white">mmm...Devoured Burgers</h2>
           <div class="card-body">
-            <h2 class="card-title text-center">mmm...Devoured Burgers</h2>
+            
             <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
               {{#each burgers}}
               {{#if devoured}}

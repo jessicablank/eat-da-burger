@@ -1,4 +1,4 @@
-let randomBurger = [
+const RandomBurgerNames= [
   "She’s a Super Leek",
   "Kales From the Crypt",
   "Sweet Chili O’Mine",
@@ -33,3 +33,14 @@ let randomBurger = [
   "Charbroil Fair",
   "Salvador Cauliflower"
 ];
+
+
+let currentRandomBurger = RandomBurgerNames[Math.floor(Math.Random())]
+const generateBtn = document.querySelector("#randomBurger-output");
+
+writeRandomBurger = () => {
+  const randomBurgerText = document.querySelector("#randomBurger-btn");
+  randomBurgerText.value = currentRandomBurger;
+}
+
+generateBtn.addEventListener("click", writeRandomBurger);

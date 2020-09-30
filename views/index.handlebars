@@ -49,10 +49,18 @@
             </div>
             {{!-- End Alert --}}
             <br>
-            <div>
-              <h2 class="card-title text-center">Need Inspiration?</h2>
-              <input class="form-control mb-1" title="Random Burger" type="text" aria-describedby="Random Burger"
-                id="randomBurgerOutput" placeholder="Get Burger of the Day" readonly="" />
+            <div class="card text-white bg-dark">
+              <h2 class="card-title text-center">Burger of the Day:</h2>
+              <div class="input-group mb-3">
+                <input class="form-control" title="Random Burger" type="text" aria-describedby="Random Burger"
+                  id="randomBurgerOutput" placeholder="License to Kale" readonly="" value=""/>
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-secondary btn-large" onClick="copyRandomBurger()"
+                    data-toggle="tooltip" data-placement="right" title="Copy to Clipboard">
+                    <i class="fa fa-copy" aria-hidden="true"> Copy</i>
+                  </button>
+                </div>
+              </div>
               <button class="btn btn-primary btn-lg btn-block" title="Generate a Random Burger" onClick="getBurger()">
                 Update the ChalkBoard!</button>
             </div>
@@ -61,9 +69,9 @@
       </div>
       <div class="col-lg-4">
         <div class="card">
-         <h2 class="card-header bg-primary text-center text-white">mmm...Devoured Burgers</h2>
+          <h2 class="card-header bg-primary text-center text-white">mmm...Devoured Burgers</h2>
           <div class="card-body">
-            
+
             <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
               {{#each burgers}}
               {{#if devoured}}

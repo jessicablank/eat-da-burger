@@ -1,5 +1,3 @@
-
-
 function getBurger(){
   const randomBurgerOutput= document.getElementById("randomBurgerOutput");
 

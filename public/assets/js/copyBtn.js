@@ -1,8 +1,5 @@
-
-
 function copyRandomBurger() {
   const input = document.getElementById('randomBurgerOutput');
-  const alert = document.getElementsByClassName('alert');
   //check for a new password, otherwise alert an error
   if (input.value) {
   input.select();

@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card">
+        <div class="card bg-warning">
           <img class="card-img-top responsive-img" src="../assets/img/BurgerFamily.jpg" alt="Bob's burgers family">
           <div class="card-body">
             <form class="create-form">
@@ -42,7 +42,7 @@
 
             {{!-- Alert if burger field is empty --}}
             <div class="alert alert-danger d-none" role="alert">
-              <strong>Hey! You Didn't Order a Burger! Please Try Again.</strong>
+              <strong>Hey! You gotta order a burger or update the chalkboard for this to work.</strong>
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -50,7 +50,7 @@
             {{!-- End Alert --}}
             <br>
             <div class="card text-white bg-dark">
-              <h2 class="card-title text-center">Burger of the Day:</h2>
+              <h2 class="card-title text-center">Burger of the Day: </h2>
               <div class="input-group mb-3">
                 <input class="form-control" title="Random Burger" type="text" aria-describedby="Random Burger"
                   id="randomBurgerOutput" placeholder="License to Kale" readonly="" value=""/>

@@ -15,10 +15,16 @@
 <main>
   <div class="container-fluid bg-warning">
     <section class="row no-gutters">
-     
-      <div class="col-lg-3">
-        <div class="card text-white bg-dark border-dark m-1">
-          <h2 class="card-title text-center">Burger of the Day</h2>
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white text-center bg-dark border-dark m-1" style="height: 18rem;">
+         
+          <h2 class="card-title ">Burger of the Day</h2>
+          <button class="btn btn-primary btn-lg btn-block" title="Generate a Random Burger" onClick="getBurger()">
+            Update!</button>
+          <br>
           <div class="input-group mb-3">
             <input class="form-control" title="Random Burger" type="text" aria-describedby="Random Burger"
               id="randomBurgerOutput" placeholder="" readonly="" value="" />
@@ -29,12 +35,23 @@
               </button>
             </div>
           </div>
-        
-        <button class="btn btn-primary btn-lg btn-block" title="Generate a Random Burger" onClick="getBurger()">
-          Update the ChalkBoard!</button>
+          <h3 class="card-text chalkboard">Comes with Pickles</h3>
+          <h4 class="card-text chalkboard">$5.95</h4>
+        </div>
       </div>
-      </div>
-      <div class="col-lg-3">
+    </section>
+  </div>
+  <div class="container-fluid bg-warning">
+    {{!-- Alert if burger field is empty --}}
+              <div class="alert alert-danger d-none" role="alert">
+                <strong>Hey! You gotta order a burger or update the chalkboard for this to work.</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              {{!-- End Alert --}}
+    <section class="row no-gutters">
+      <div class="col-lg-4">
         <div class="card text-white bg-secondary border-dark m-1">
           <h2 class="card-title text-center">Your Burger Order</h2>
           <div class="card-body">
@@ -44,14 +61,7 @@
                   name="burger_name"></input>
               </div>
 
-                {{!-- Alert if burger field is empty --}}
-            <div class="alert alert-danger d-none" role="alert">
-              <strong>Hey! You gotta order a burger or update the chalkboard for this to work.</strong>
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            {{!-- End Alert --}}
+             
 
               <button class="btn btn-success btn-lg btn-block" title="Submit Burger Order" type="submit">Place Your
                 Order!</button>
@@ -60,7 +70,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-4">
         <div class="card text-white bg-dark border-dark m-1">
           <h2 class="card-header text-center text-white"><i class='fas fa-hamburger'></i> Burgers Ready to Be
             Devoured</h2>
@@ -76,14 +86,14 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-4">
         <div class="card text-white bg-dark border-dark m-1">
           <h2 class="card-header text-center text-white">mmm...Devoured Burgers <i class='fas fa-hamburger'></i></h2>
           <div class="card-body">
             <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
               {{#each burgers}}
               {{#if devoured}}
-             {{> burgers/burger-block devoured=false}}
+              {{> burgers/burger-block devoured=false}}
               {{/if}}
               {{/each}}
             </ul>

@@ -2,44 +2,53 @@ function getBurger(){
   const randomBurgerOutput= document.getElementById("randomBurgerOutput");
 
   const RandomBurgerNames= [
-    "She’s a Super Leek",
-    "Kales From the Crypt",
-    "Sweet Chili O’Mine",
-    "Bohemian Radishy",
-    "Little Swiss Bunshine",
-    "Poutine - On the Ritz",
-    "Pepper Don’t Preach",
-    "Sweet Home Avocado",
-    "Pablano Picasso",
-    "Grandpa Muenster",
-    "New Bacon-ings",
-    "A Leek of Their Own",
-    "Tarragon in Sixty Seconds",
-    "Top Bun",
-    "The Longest Chard",
-    "Sharp Cheddar Dressed Man",
-    "Sit and Spinach",
-    "All In A Glaze Work",
-    "To Err Is Cumin",
-    "Jagged Little Dill",
-    "Curd-fect Strangers",
-    "Weekend at Bearnaise",
-    "The Roquefort Files",
-    "Judy Garlic",
-    "The Ruth Tomater",
-    "Fig Lebowski",
-    "Butterface",
-    "Breaking Radish",
-    "Edamame Dearest",
-    "Krauted House",
-    "Run Gorgonzola Run",
-    "Charbroil Fair",
-    "Salvador Cauliflower"
+"A Leek of Their Own",
+"All In A Glaze Work",
+"Bohemian Radishy",
+"Breaking Radish",
+"Butterface",
+"Charbroil Fair",
+"Curd-fect Strangers",
+"Edamame Dearest",
+"Fig Lebowski",
+"Grandpa Muenster",
+"Jagged Little Dill",
+"Judy Garlic",
+"Kales From the Crypt",
+"Krauted House",
+"Little Swiss Bunshine",
+"New Bacon-ings",
+"Pablano Picasso",
+"Pepper Don’t Preach",
+"Poutine - On the Ritz",
+"Run Gorgonzola Run",
+"Salvador Cauliflower",
+"Sharp Cheddar Dressed Man",
+"She’s a Super Leek",
+"Sit and Spinach",
+"Sweet Chili O’Mine",
+"Sweet Home Avocado",
+"Tarragon in Sixty Seconds",
+"The Longest Chard",
+"The Roquefort Files",
+"The Ruth Tomater",
+"To Err Is Cumin",
+"Top Bun",
+"Weekend at Bearnaise",
   ];
 
+  const belcherNames = [
+    "Al",
+    "Bob",
+    "Gene",
+    "Gloria",
+    "Linda",
+    "Tina",
+  ]
   
   let currentRandomBurger = RandomBurgerNames[Math.floor(Math.random()*RandomBurgerNames.length)]
-  console.log("The ChalkBoard Says: " + currentRandomBurger)
+  let currentRandomBelcher = belcherNames[Math.floor(Math.random()*belcherNames.length)]
+  console.log(currentRandomBelcher +" Recommends the " + currentRandomBurger + " Burger")
   randomBurgerOutput.value=currentRandomBurger;
 }
 

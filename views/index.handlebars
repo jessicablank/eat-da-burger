@@ -13,7 +13,7 @@
     <section class="row no-gutters">
       <div class="col-lg-4">
         <div class="card">
-          <h2 class="card-header bg-primary text-center text-white">Burgers Ready to Be Devoured</h2>
+          <h2 class="card-header bg-primary text-center text-white"><i class='fas fa-hamburger'></i> Burgers Ready to Be Devoured</h2>
           <div class="card-body">
             <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">
               {{!-- devoured is the default state of "ready to be devoured" --}}
@@ -53,11 +53,11 @@
               <h2 class="card-title text-center">Burger of the Day: </h2>
               <div class="input-group mb-3">
                 <input class="form-control" title="Random Burger" type="text" aria-describedby="Random Burger"
-                  id="randomBurgerOutput" placeholder="License to Kale" readonly="" value=""/>
+                  id="randomBurgerOutput" placeholder= "" readonly="" value=""/>
                 <div class="input-group-append">
                   <button type="button" class="btn btn-secondary btn-large" onClick="copyRandomBurger()"
                     data-toggle="tooltip" data-placement="right" title="Copy to Clipboard">
-                    <i class="fa fa-copy" aria-hidden="true"> Copy</i>
+                     <i class="fa fa-check-square-o" aria-hidden="true"></i> Order this Burger</i>
                   </button>
                 </div>
               </div>
@@ -69,7 +69,7 @@
       </div>
       <div class="col-lg-4">
         <div class="card">
-          <h2 class="card-header bg-primary text-center text-white">mmm...Devoured Burgers</h2>
+          <h2 class="card-header bg-primary text-center text-white">mmm...Devoured Burgers <i class='fas fa-hamburger'></i></h2>
           <div class="card-body">
 
             <ul role="list" class="list-group list-group-flush" area-labelledby="list heading">

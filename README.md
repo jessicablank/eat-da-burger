@@ -44,7 +44,7 @@ Now the refactored application had full CRUD capabilities:
  
  Next, I created a random burger generator and styled it to look like the iconic chalkboard from the show. I added functionality for users to either type their own burger name or order the burger from the _Burger of the Day_ board. During this process I added a little Easter Egg to the console because I am a new developer and I find console messages magical. 
 
- To test these updates, I texted the app link to a friend and his response was "I love this!" Phew! I asked a few other friends to test and felt good about letting this be the final version (for now).
+ To test these updates, I texted the app link to a friend and his response was "I love this!" Phew! I asked a few other friends to test and received positive feedback. I feel good about letting this be the final version (for now).
  
 Here are screenshots of the MVP, the CRUD, and the FINAL. 
 
@@ -131,4 +131,4 @@ You can reach the author, Jessica Blankemeier via [jessicablankemeier@gmail.com]
 Copyright 2020 - present Jessica Blankemeier.
 This project is licensed under the terms of the MIT license. 
 This page has no license or affiliation with Fox entertainment and is for fan fun use only. 
-More information is available at [opensource.org/licenses](https://opensource.org/licenses/MIT);
+More information is available at [opensource.org/licenses](https://opensource.org/licenses/MIT)

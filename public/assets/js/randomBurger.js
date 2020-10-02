@@ -47,6 +47,9 @@ function getBurger(){
     "Tina",
   ]
   
+  //Uncomment to see how many random burgers there are. We started with 33 in October 2020
+  // console.log(RandomBurgerNames.length)
+  
   let currentRandomBurger = RandomBurgerNames[Math.floor(Math.random()*RandomBurgerNames.length)]
   let currentRandomBelcher = belcherNames[Math.floor(Math.random()*belcherNames.length)]
   console.log(currentRandomBelcher +" Recommends the " + currentRandomBurger + " Burger")

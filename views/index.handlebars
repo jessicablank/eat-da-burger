@@ -20,7 +20,7 @@
       <div class="col-lg-4">
         <div class="card text-white text-center bg-dark border-dark p-1 m-4" style="height: 18rem;">
          
-          <h2 class="card-title ">Burger of the Day</h2>
+          <h2 class="card-title chalkboard">Burger of the Day</h2>
           <button class="btn btn-primary btn-lg btn-block" title="Generate a Random Burger" onClick="getBurger()">
             Update!</button>
           <br>
@@ -45,16 +45,13 @@
   <div class="container-fluid bg-warning">
     {{!-- Alert if burger field is empty --}}
               <div class="alert alert-danger d-none" role="alert">
-                <strong>Hey! You gotta order a burger or update the chalkboard for this to work.</strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                <strong>Hey! You gotta update the Burger of the Day and Place Your Order for this to work.</strong>
               </div>
               {{!-- End Alert --}}
     <section class="row no-gutters">
       <div class="col-lg-4">
         <div class="card text-white bg-secondary border-dark m-1">
-          <h2 class="card-title text-center">Your Burger Order</h2>
+          <h2 class="card-title text-center">Type Your Burger Order</h2>
           <div class="card-body">
             <form class="create-form">
               <div class="form-group">

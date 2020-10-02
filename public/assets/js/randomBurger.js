@@ -1,6 +1,7 @@
 function getBurger(){
   const randomBurgerOutput= document.getElementById("randomBurgerOutput");
-
+  
+//Add burger or Belcher names in alphabetical order please!
   const RandomBurgerNames= [
 "A Leek of Their Own",
 "All In A Glaze Work",

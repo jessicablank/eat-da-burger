@@ -47,5 +47,25 @@ $(() => {
       });
     }
     });
+
+    $(".random-form").on("click", (event) => {
+      event.preventDefault();
+      if($("#randomBurgerOutput").val().trim()=== null || $("#randomBurgerOutput").val().trim() === " " || $("#randomBurgerOutput").val().trim()==="")
+      {
+        $('.alert').removeClass('d-none').addClass('show');
+      } else {
+      const newBurger = {
+        burger_name: $("#randomBurgerOutput").val().trim(),
+        devoured: 0
+      };
+  
+      $.ajax("/api/burger", {
+        type: "POST",
+        data: newBurger,
+      }).then(() => {
+        location.reload();
+      });
+    }
+    });
   });
   

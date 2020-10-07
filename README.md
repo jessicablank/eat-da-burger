@@ -40,7 +40,7 @@ Now the refactored application had full CRUD capabilities:
   I updated the styling and added pictures from Bob's Burgers. I showed the project to my friends. They were impressed, but stumped. I thought the Burger of the Day art images would inspire users to type a clever burger name. Instead, the burger names on the images were difficult to read and intimidated the users. Users felt pressure to come up with a clever burger name on their own. Watching the users struggle also showed me that every time the page refreshed to move a burger, the images flashed awkwardly. Back to refactoring.
 
  ### FINAL
- The first improvement was to remove the Burger of the Day art. I had trouble locating the original artist to ask permission to use the images. I also wanted to limit the amount of flashing during a page reload. I moved the remaining image into the header so it's not as distracting when the page reloads. I also credited the source of the image in the footer of the page. 
+ The first improvement was to remove the Burger of the Day art. I had trouble locating the original artist to ask permission to use the images. I also wanted to limit the amount of flashing during a page reload. I moved the remaining image into the header so it's not as distracting when the page reloads. I credited the source of the remaining image in the footer of the page. 
  
  Next, I created a random burger generator and styled it to look like the iconic chalkboard from the show. I added functionality for users to either type their own burger name or order the burger from the _Burger of the Day_ board. During this process I added a little Easter Egg to the console because I am a new developer and I find console messages magical. 
 
@@ -101,8 +101,7 @@ This project uses a custom ORM (Object Relational Mapper) to connect the code to
 |     |  └── favicon.ico
 |     └── js
 |        ├── burgers.js
-|        ├── copyBtn.js
-|        └── randomBurger.js <--Contribute Here!-->
+|        └── randomBurger.js <--Contribute Here!!!-->
 ├── README.md
 ├── screenshot.PNG
 ├── screenshotv2.PNG

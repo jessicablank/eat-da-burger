@@ -18,67 +18,70 @@
 * [Questions](#questions)
 * [License](#license-info)
 
-## Project Story
-### MVP
+# Project Story
+## MVP
 This project started as a coding bootcamp assignment for a restaurant application. The minimum requirements were:
 - User inputs the name of the burger they would like to eat.
 - All inputted burgers are stored in a mySQL database. 
 - When a user submits a burger's name, the burger will be displayed on the left side of the page waiting to be devoured. 
 - Each waiting burger will have a `devour it!` button. When the user clicks the button, the burger will move the right side of the page. 
 
-The reason it's called "Coding Bootcamp" and not "Coding Fun Times" is because the course moves _fast_. We would learn a new concept - in this case mySQL and NPM Handlebars.js - and submit a homework assignment using those concepts a few days later. As a result, my homework submissions often just met the Minimum Viable Product (MVP) requirements. After bootcamp classes ended, I decided to take some time to go back to improve my favorite homework assignments. 
+The reason it's called "Coding Bootcamp" and not "Coding Fun Times" is because the course moves _fast_. We would learn a new concept - in this case mySQL and NPM Handlebars.js - and submit a homework assignment using those concepts a few days later. As a result, my homework submissions often just met the Minimum Viable Product (MVP) requirements. After bootcamp classes ended, I decided to take some time to go back to improve my favorite assignments. 
 
-### CRUD
-The first improvement for this homework assignment was to add full database functionality. The MVP I submitted did not have a "delete" function. This means my project did not fulfill the full lifecycle of CRUD (Create Read Update Delete). Fortunately I fulfilled the project requirements. Unfortunately, a user could submit an untoward burger name on my deployed application and everyone who visited the site would be able to read it :flushed: In fact, after I added the delete function this very scenario played out. No, I won't tell you the inappropriate (but hilarious) burger name I discovered all over my project on a Wednesday morning. You can ask me via email.
+## CRUD
+The first improvement for this homework assignment was to add full database functionality. The MVP I submitted did not have a "delete" function.
 
-Now the refactored application had full CRUD capabilities:
+The refactored application had full database operation capabilities:
  - CREATE: Order a burger
  - READ: The burger will appear in the "Burgers Ready to Be Devoured" column by default. Once updated, the burger may appear in the "mmm..Devoured Burgers" column.
  - UPDATE: The user can move the burger between columns via the *Devour It* and *Make It Again* buttons.
  - DELETE: The user can delete the burger from the database via the *Send It Back!* and *X* buttons. 
 
-  I updated the styling and added pictures from Bob's Burgers. I showed the project to my friends to test it. They were impressed, but stumped. I thought the Burger of the Day art images would inspire users to type a clever burger name. Instead, the burger names on the images were difficult to read and intimidated the users. Users felt pressure to come up with a clever burger name on their own. Watching the users struggle also showed me that every time the page refreshed to move a burger, the images flashed awkwardly. Back to refactoring.
+I saw the value of the delete function almost immediately. No, I won't type the inappropriate (but hilarious) burger name I discovered all over my project on a Wednesday morning. You can ask me via email.
 
- ### FINAL
- The first improvement was to remove the Burger of the Day art. I moved the remaining image into the header so it's not as distracting when the page reloads.
- 
- Next, I created a random burger generator and styled it to look like the iconic chalkboard from the show. I added functionality for users to either type their own burger name or order the burger from the _Burger of the Day_ board. During this process I added a little Easter Egg to the console because I am a new developer and I find console messages magical. 
+I also updated the styling and added pictures from Bob's Burgers. I showed the project to my friends to test it. They were impressed, but stumped. 
 
- To test these updates, I texted the app link to a friend and his response was "I love this!" Phew! I asked a few other friends to test and received positive feedback. I feel good about letting this be the final version (for now).
+I thought the Burger of the Day art images would inspire users to type a clever burger name. Instead, the burger names on the images were difficult to read and intimidated the users. Users felt pressure to come up with a clever burger name on their own. Watching the users struggle also showed me that every time the page refreshed to move a burger, the images flashed awkwardly. Back to refactoring.
+
+ ## FINAL
+
+I created a random burger generator and styled it to look like the iconic chalkboard from the show. I added functionality for users to either type their own burger name or click to order the burger from the _Burger of the Day_ board. During this process I added a little Easter Egg to the console because I am a new developer and I find console messages magical. :sparkles:
+
+To test these updates, I texted the app link to a friend and his response was "I love this!" Phew! I asked a few other friends to test and received positive feedback. I feel good about letting this be the final version (for now).
  
 Here are screenshots of the MVP, the CRUD, and the FINAL. 
 
 
-#### MVP:
+## MVP:
 
 ![ScreenShot](./screenshot.PNG)
 
-#### CRUD:
+## CRUD:
 
 ![ScreenShot](./screenshotv2.PNG)
 
-#### FINAL:
+## FINAL:
 
 ![ScreenShot](./screenshotv3.PNG)
 
-### Easter Egg
+## Easter Egg
 
 ![ScreenShot](./screenshotEasterEgg.PNG)
     
-## Contributing
+# Contributing
 I invite you to contribute Random Burgers from the show for the _Burger of the Day_ board. The `RandomBurgerNames` array is in the **randomBurger.js** file. Please keep the names in alphabetical order. 
 
 In the same file, there is also a `belcherNames` array available for contributions to my silly Easter Egg in the console.
 
 I will be reviewing all of the submissions proposed through Pull requests. I would like to keep these clean, fun, and related to the show. 
 
-## Local Installation Instructions
+# Local Installation Instructions
 Clone the repo and install dependencies in terminal using `npm i`
 
 You can use `npm start` to get the app running on localhost:8080
 
-## File Structure
-This project uses a custom ORM (Object Relational Mapper) to connect the code to the mySQL database. 
+# File Structure
+This project uses a custom Object Relational Mapper(ORM) to connect the code to the mySQL database. 
 ```
 ├── config
 |  ├── connection.js
@@ -115,20 +118,18 @@ This project uses a custom ORM (Object Relational Mapper) to connect the code to
       └── burgers
          └── burger-block.handlebars
 ```
-## Technologies Used
+# Technologies Used
 - [BootStrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 - [NPM HandleBars](https://www.npmjs.com/package/handlebars)
 - [NPM MySQL](https://www.npmjs.com/package/mysql)
 - [NPM Express](https://www.npmjs.com/package/express)
 - [NPM Express-HandleBars](https://www.npmjs.com/package/express-handlebars)
 
-
-
-## Questions
+# Questions
 You can reach the author, Jessica Blankemeier via [jessicablankemeier@gmail.com](mailto:jessicablankemeier@gmail.com)
 
 
-## License
+# License
 Copyright 2020 - present Jessica Blankemeier.
 This project is licensed under the terms of the MIT license. 
 This page has no license or affiliation with Fox entertainment and is for fan fun use only. 

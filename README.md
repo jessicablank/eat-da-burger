@@ -29,7 +29,7 @@ This project started as a coding bootcamp assignment for a restaurant applicatio
 The reason it's called "Coding Bootcamp" and not "Coding Fun Times" is because the course moves _fast_. We would learn a new concept - in this case mySQL and NPM Handlebars.js - and submit a homework assignment using those concepts a few days later. As a result, my homework submissions often just met the Minimum Viable Product (MVP) requirements. After bootcamp classes ended, I decided to take some time to go back to improve my favorite homework assignments. 
 
 ### CRUD
-The first improvement for this homework assignment was to add full database functionality. The MVP I submitted did not have a "delete" function. This means my project did not fulfill the full lifecycle of CRUD (more details below). This also means someone could submit an untoward burger name on my deployed application and everyone who visited the site would be able to read it :flushed: In fact, after I added the delete function this very scenario played out. No, I won't tell you the inappropriate (but hilarious) burger name I discovered all over my project on a Wednesday morning. You can ask me via email :grinning:
+The first improvement for this homework assignment was to add full database functionality. The MVP I submitted did not have a "delete" function. This means my project did not fulfill the full lifecycle of CRUD (Create Read Update Delete). Fortunately I fulfilled the project requirements. Unfortunately, a user could submit an untoward burger name on my deployed application and everyone who visited the site would be able to read it :flushed: In fact, after I added the delete function this very scenario played out. No, I won't tell you the inappropriate (but hilarious) burger name I discovered all over my project on a Wednesday morning. You can ask me via email.
 
 Now the refactored application had full CRUD capabilities:
  - CREATE: Order a burger
@@ -37,10 +37,10 @@ Now the refactored application had full CRUD capabilities:
  - UPDATE: The user can move the burger between columns via the *Devour It* and *Make It Again* buttons.
  - DELETE: The user can delete the burger from the database via the *Send It Back!* and *X* buttons. 
 
-  I updated the styling and added pictures from Bob's Burgers. I showed the project to my friends. They were impressed, but stumped. I thought the Burger of the Day art images would inspire users to type a clever burger name. Instead, the burger names on the images were difficult to read and intimidated the users. Users felt pressure to come up with a clever burger name on their own. Watching the users struggle also showed me that every time the page refreshed to move a burger, the images flashed awkwardly. Back to refactoring.
+  I updated the styling and added pictures from Bob's Burgers. I showed the project to my friends to test it. They were impressed, but stumped. I thought the Burger of the Day art images would inspire users to type a clever burger name. Instead, the burger names on the images were difficult to read and intimidated the users. Users felt pressure to come up with a clever burger name on their own. Watching the users struggle also showed me that every time the page refreshed to move a burger, the images flashed awkwardly. Back to refactoring.
 
  ### FINAL
- The first improvement was to remove the Burger of the Day art. I had trouble locating the original artist to ask permission to use the images. I also wanted to limit the amount of flashing during a page reload. I moved the remaining image into the header so it's not as distracting when the page reloads. I credited the source of the remaining image in the footer of the page. 
+ The first improvement was to remove the Burger of the Day art. I moved the remaining image into the header so it's not as distracting when the page reloads.
  
  Next, I created a random burger generator and styled it to look like the iconic chalkboard from the show. I added functionality for users to either type their own burger name or order the burger from the _Burger of the Day_ board. During this process I added a little Easter Egg to the console because I am a new developer and I find console messages magical. 
 
@@ -101,7 +101,7 @@ This project uses a custom ORM (Object Relational Mapper) to connect the code to
 |     |  └── favicon.ico
 |     └── js
 |        ├── burgers.js
-|        └── randomBurger.js <--Contribute Here!!!-->
+|        └── randomBurger.js <--^-^--Contribute Here!!!-^-^-->
 ├── README.md
 ├── screenshot.PNG
 ├── screenshotv2.PNG

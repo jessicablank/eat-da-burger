@@ -10,13 +10,13 @@
  A fan site for the show Bob's Burgers. I invite you to learn more and possibly contribute a random burger or Belcher family member. 
 
  ## Table of Contents:
-* [Project Story](#project-story)
-* [Contributing](#contributing)
-* [Local Installation](#local-installation-instructions)
-* [File Structure](#file-structure)
-* [Technologies Used](#technologies-used)
-* [Questions](#questions)
-* [License](#license-info)
+* [Project Story](#project-story "Go to project story")
+* [Contributing](#contributing "Learn how to contribute")
+* [Local Installation](#local-installation-instructions "Guide to install on your machine")
+* [File Structure](#file-structure "See full file structure")
+* [Technologies Used](#technologies-used "Learn more about integrated technologies")
+* [Questions](#questions "Submit questions to jessicablankemeier@gmail.com")
+* [License](#license-info "MIT License")
 
 # Project Story
 ## MVP
@@ -26,18 +26,18 @@ This project started as a coding bootcamp assignment for a restaurant applicatio
 - When a user submits a burger's name, the burger will be displayed on the left side of the page waiting to be devoured. 
 - Each waiting burger will have a `devour it!` button. When the user clicks the button, the burger will move the right side of the page. 
 
-The reason it's called "Coding Bootcamp" and not "Coding Fun Times" is because the course moves _fast_. We would learn a new concept - in this case mySQL and NPM Handlebars.js - and submit a homework assignment using those concepts a few days later. As a result, my homework submissions often just met the Minimum Viable Product (MVP) requirements. After bootcamp classes ended, I decided to take some time to go back to improve my favorite assignments. 
+The reason it's called "Coding Bootcamp" and not "Coding Fun Times" is because the course moves _fast_. We would learn a new concept and submit a homework assignment using those concepts a few days later. My homework submissions often just met the Minimum Viable Product (MVP) requirements. In this case, we had just _barely_ learned how to integrate a mySQL back-end with a Node Handlebars.js front-end. I received an "A" on the assignment, but the user interface was not appealing (see picture below).
+
+After bootcamp classes ended, I decided to take some time to go back to improve my favorite assignments. This was my first refactoring project. 
 
 ## CRUD
-The first improvement for this homework assignment was to add full database functionality. The MVP I submitted did not have a "delete" function.
-
-The refactored application had full database operation capabilities:
+The first improvement for this homework assignment was to add full database functionality. The MVP I submitted did not have a "delete" function. The refactored application had full database operation capabilities:
  - CREATE: Order a burger
  - READ: The burger will appear in the "Burgers Ready to Be Devoured" column by default. Once updated, the burger may appear in the "mmm..Devoured Burgers" column.
- - UPDATE: The user can move the burger between columns via the *Devour It* and *Make It Again* buttons.
- - DELETE: The user can delete the burger from the database via the *Send It Back!* and *X* buttons. 
+ - UPDATE: The user can move the burger between columns via the `Devour It` and `Make It Again` buttons.
+ - DELETE: The user can delete the burger from the database via the `Send It Back!` and `X` buttons. 
 
-I saw the value of the delete function almost immediately. No, I won't type the inappropriate (but hilarious) burger name I discovered all over my project on a Wednesday morning. You can ask me via email.
+I saw the value of the client-side delete function almost immediately. I won't record the inappropriate (but hilarious) burger name I discovered all over my project on a Wednesday morning. You can ask me via email.
 
 I also updated the styling and added pictures from Bob's Burgers. I showed the project to my friends to test it. They were impressed, but stumped. 
 
@@ -54,19 +54,23 @@ Here are screenshots of the MVP, the CRUD, and the FINAL.
 
 ## MVP:
 
-![ScreenShot](./screenshot.PNG)
+![ScreenShot](./screenshot.PNG "Original MVP with CREATE, READ, And Update")
 
 ## CRUD:
 
-![ScreenShot](./screenshotv2.PNG)
+![ScreenShot](./screenshotv2.PNG "Refactored CRUD with Bob's Burgers Family")
 
 ## FINAL:
 
-![ScreenShot](./screenshotv3.PNG)
+![ScreenShot](./screenshotv3.PNG "Final Version with Random Burger Generator")
+
+## FINAL IN ACTION:
+
+![Gif](./Eat-Da-Burger.gif "Final Version Animated Gif")
 
 ## Easter Egg
 
-![ScreenShot](./screenshotEasterEgg.PNG)
+![ScreenShot](./screenshotEasterEgg.PNG "Open the console to see the magic")
     
 # Contributing
 I invite you to contribute Random Burgers from the show for the _Burger of the Day_ board. The `RandomBurgerNames` array is in the **randomBurger.js** file. Please keep the names in alphabetical order. 
@@ -104,7 +108,7 @@ This project uses a custom Object Relational Mapper(ORM) to connect the code to 
 |     |  └── favicon.ico
 |     └── js
 |        ├── burgers.js
-|        └── randomBurger.js <--^-^--Contribute Here!!!-^-^-->
+|        └── randomBurger.js <~*-^-^-~Contribute Here!!~-^-^-*~>
 ├── README.md
 ├── screenshot.PNG
 ├── screenshotv2.PNG
@@ -120,6 +124,7 @@ This project uses a custom Object Relational Mapper(ORM) to connect the code to 
 ```
 # Technologies Used
 - [BootStrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [jawsDB](https://www.jawsdb.com/)
 - [NPM HandleBars](https://www.npmjs.com/package/handlebars)
 - [NPM MySQL](https://www.npmjs.com/package/mysql)
 - [NPM Express](https://www.npmjs.com/package/express)

@@ -6,6 +6,7 @@ const RandomBurgerNames= [
   "A Leek of Their Own",
   "All In A Glaze Work",
   "Bay Leaf in Magic",
+  "Beets Me",
   "Bohemian Radishy",
   "Breaking Radish",
   "Butterface",
@@ -16,6 +17,7 @@ const RandomBurgerNames= [
   "Enoki Dokie Burger",
   "Fig Lebowski",
   "Grandpa Muenster",
+  "Holy Chuck",
   "I Fought the Slaw",
   "It's Only Sourdough",
   "Jagged Little Dill",
@@ -42,6 +44,7 @@ const RandomBurgerNames= [
   "To Err Is Cumin",
   "Top Bun",
   "Weekend at Bearnaise",
+  "Yes I Cayenne",
     ];
 
   const belcherNames = [

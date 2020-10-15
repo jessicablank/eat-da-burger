@@ -15,6 +15,7 @@
 * [Local Installation](#local-installation-instructions "Guide to install on your machine")
 * [File Structure](#file-structure "See full file structure")
 * [Technologies Used](#technologies-used "Learn more about integrated technologies")
+* [mySQL](#mySQL "Peak inside the table")
 * [Questions](#questions "Submit questions to jessicablankemeier@gmail.com")
 * [License](#license-info "MIT License")
 
@@ -30,6 +31,10 @@ The reason it's called "Coding Bootcamp" and not "Coding Fun Times" is because t
 
 After bootcamp classes ended, I decided to take some time to go back to improve my favorite assignments. This was my first refactoring project. 
 
+Original Submission. Yawn.
+
+![Original](./screenshot.PNG "Original MVP with CREATE, READ, And Update")
+
 ## CRUD
 The first improvement for this homework assignment was to add full database functionality. The MVP I submitted did not have a "delete" function. The refactored application had full database operation capabilities:
  - CREATE: Order a burger
@@ -43,39 +48,28 @@ I also updated the styling and added pictures from Bob's Burgers. I showed the p
 
 I thought the Burger of the Day art images would inspire users to type a clever burger name. Instead, the burger names on the images were difficult to read and intimidated the users. Users felt pressure to come up with a clever burger name on their own. Watching the users struggle also showed me that every time the page refreshed to move a burger, the images flashed awkwardly. Back to refactoring.
 
+![CRUD](./screenshotv2.PNG "Refactored CRUD with Bob's Burgers Family")
+
  ## FINAL
 
 I created a random burger generator and styled it to look like the iconic chalkboard from the show. I added functionality for users to either type their own burger name or click to order the burger from the _Burger of the Day_ board. During this process I added a little Easter Egg to the console because I am a new developer and I find console messages magical. :sparkles:
 
 To test these updates, I texted the app link to a friend and his response was "I love this!" Phew! I asked a few other friends to test and received positive feedback. I feel good about letting this be the final version (for now).
- 
-Here are screenshots of the MVP, the CRUD, and the FINAL. 
 
-
-## MVP:
-
-![ScreenShot](./screenshot.PNG "Original MVP with CREATE, READ, And Update")
-
-## CRUD:
-
-![ScreenShot](./screenshotv2.PNG "Refactored CRUD with Bob's Burgers Family")
-
-## FINAL:
-
-![ScreenShot](./screenshotv3.PNG "Final Version with Random Burger Generator")
+![Final](./screenshotv3.PNG "Final Version with Random Burger Generator")
 
 ## FINAL IN ACTION:
 
 ![Gif](./Eat-Da-Burger.gif "Final Version Animated Gif")
 
-## Easter Egg
+## Easter Egg - Shhhhhh...
 
-![ScreenShot](./screenshotEasterEgg.PNG "Open the console to see the magic")
+![Console](./screenshotEasterEgg.PNG "Open the console to see the magic")
     
 # Contributing
 I invite you to contribute Random Burgers from the show for the _Burger of the Day_ board. The `RandomBurgerNames` array is in the **randomBurger.js** file. Please keep the names in alphabetical order. 
 
-In the same file, there is also a `belcherNames` array available for contributions to my silly Easter Egg in the console.
+In the same file, there is also a `belcherNames` array available for contributions to the console Easter Egg.
 
 I will be reviewing all of the submissions proposed through Pull requests. I would like to keep these clean, fun, and related to the show. 
 
@@ -129,6 +123,26 @@ This project uses a custom Object Relational Mapper(ORM) to connect the code to 
 - [NPM MySQL](https://www.npmjs.com/package/mysql)
 - [NPM Express](https://www.npmjs.com/package/express)
 - [NPM Express-HandleBars](https://www.npmjs.com/package/express-handlebars)
+
+# mySQL
+Upon creation, the burgers receive a unique id and are by default "not devoured".  
+
+Schema:
+```
+CREATE TABLE burgers
+(
+	id int NOT NULL AUTO_INCREMENT,
+	burger_name  varchar(255) NOT NULL,
+	devoured BOOLEAN DEFAULT false,
+	PRIMARY KEY (id)
+);
+```
+When the user clicks the `Devour It!` button, the burger's devoured state changes to `true`.
+
+Example Table:
+
+![mySQL](./mySQL.PNG "Resulting Table")
+
 
 # Questions
 You can reach the author, Jessica Blankemeier via [jessicablankemeier@gmail.com](mailto:jessicablankemeier@gmail.com)

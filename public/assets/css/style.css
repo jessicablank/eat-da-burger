@@ -1,3 +1,4 @@
+/* Global Styling */
 html{
   background-color: #ffc107;
 }
@@ -10,6 +11,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header Styling Start */
 #header {
   color: red;
   text-align: center;
@@ -19,13 +21,13 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-#footer {
-  color: red;
+#header-text{
+  font-style: italic;
   text-align: center;
   font-weight: bold;
-  font-size: 3rem;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+/* Loading Indicator Start */
 
 .loader {
   border: 16px solid #f3f3f3;
@@ -37,32 +39,58 @@ body {
   animation: spin 2s linear infinite;
 }
 
-#header-text{
-  font-style: italic;
-  text-align: center;
+/* Burger Boards Start */
+#randomBurgerOutput{
   font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: large;
+  background-color: black;
+  color: whitesmoke;
 }
+
+.chalkboard {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 
 ul {
   list-style-type: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  text-align: left;
 }
   
   .label {
     font-weight: bold;
   }
 
-  #randomBurgerOutput{
+  /* Footer Start*/
+  #footer {
+    color: red;
+    text-align: center;
     font-weight: bold;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: large;
-    background-color: black;
-    color: whitesmoke;
+    font-size: 3rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
-  .chalkboard {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-  }
-
-  
+.github-corner svg{
+  position:absolute;
+  top:0%;
+  right:0%;
+	color:#eeeeee;
+	fill:#353535;
+}
+.github-corner:hover .octo-arm{
+	animation:octocat-wave .56s;
+}
+@keyframes octocat-wave{
+	0%, 100%{
+		transform:rotate(0);
+	}
+	20%, 60%{
+		transform:rotate(-20deg);
+	}
+	40%, 80%{
+		transform:rotate(10deg);
+	}
+}

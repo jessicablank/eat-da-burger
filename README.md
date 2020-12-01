@@ -21,15 +21,16 @@
 
 # Project Story
 ## MVP
-This project started as a coding bootcamp assignment for a restaurant application. The minimum requirements were:
+This project started as a coding boot camp assignment for a restaurant application. 
+Minimum requirements:
 - User inputs the name of the burger they would like to eat.
 - All inputted burgers are stored in a mySQL database. 
 - When a user submits a burger's name, the burger will be displayed on the left side of the page waiting to be devoured. 
 - Each waiting burger will have a `devour it!` button. When the user clicks the button, the burger will move the right side of the page. 
 
-The reason it's called "Coding Bootcamp" and not "Coding Fun Times" is because the course moves _fast_. We would learn a new concept and submit a homework assignment using those concepts a few days later. My homework submissions often just met the Minimum Viable Product (MVP) requirements. In this case, we had just _barely_ learned how to integrate a mySQL back-end with a Node Handlebars.js front-end. I received an "A" on the assignment, but the user interface was not appealing (see picture below).
+The reason it's called "Coding Boot Camp" and not "Coding Fun Times" is because the course moves _fast_. We would learn a new concept and submit a homework assignment using those concepts a few days later. My homework submissions often just met the Minimum Viable Product (MVP) requirements. In this case, we had just _barely_ learned how to integrate a mySQL back-end with a Node Handlebars.js front-end. I received an "A" on the assignment, but the user interface was not appealing (see picture below).
 
-After bootcamp classes ended, I decided to take some time to go back to improve my favorite assignments. This was my first refactoring project. 
+After boot camp classes ended, I decided to take some time to go back to improve my favorite assignments. This was my first refactoring project. 
 
 Original Submission. Yawn.
 
@@ -42,11 +43,11 @@ The first improvement for this homework assignment was to add full database func
  - UPDATE: The user can move the burger between columns via the `Devour It` and `Make It Again` buttons.
  - DELETE: The user can delete the burger from the database via the `Send It Back!` and `X` buttons. 
 
-I saw the value of the client-side delete function almost immediately. I won't record the inappropriate (but hilarious) burger name I discovered all over my project on a Wednesday morning. You can ask me via email.
+I saw the value of a client-side delete function almost immediately. I won't record the inappropriate (but hilarious) burger name I discovered all over my project on a Wednesday morning. You can ask me via email.
 
-I also updated the styling and added pictures from Bob's Burgers. I showed the project to my friends to test it. They were impressed, but stumped. 
+I also updated the styling and added pictures from Bob's Burgers. I showed the project to my friends to test it. They were stumped. 
 
-I thought the Burger of the Day art images would inspire users to type a clever burger name. Instead, the burger names on the images were difficult to read and intimidated the users. Users felt pressure to come up with a clever burger name on their own. Watching the users struggle also showed me that every time the page refreshed to move a burger, the images flashed awkwardly. Back to refactoring.
+I thought the "Burger of the Day" art images would inspire users to type a clever burger name. Instead, the burger names on the images were difficult to read and intimidated the users. Users felt pressure to come up with a clever burger name on their own. Watching the users struggle also showed me that every time the page refreshed to move a burger, the images flashed awkwardly. Back to refactoring.
 
 ![CRUD](./screenshotv2.PNG "Refactored CRUD with Bob's Burgers Family")
 

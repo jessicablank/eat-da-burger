@@ -154,3 +154,5 @@ Copyright 2020 - present Jessica Blankemeier.
 This project is licensed under the terms of the MIT license. 
 This page has no license or affiliation with Fox entertainment and is for fan fun use only. 
 More information is available at [opensource.org/licenses](https://opensource.org/licenses/MIT)
+
+[Back to Top](#table-of-contents)

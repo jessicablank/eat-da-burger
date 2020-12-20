@@ -119,6 +119,7 @@ This project uses a custom Object Relational Mapper(ORM) to connect the code to 
 ```
 # Technologies Used
 - [BootStrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [GitHub Corners](https://tholman.com/github-corners/)
 - [jawsDB](https://www.jawsdb.com/)
 - [NPM HandleBars](https://www.npmjs.com/package/handlebars)
 - [NPM MySQL](https://www.npmjs.com/package/mysql)

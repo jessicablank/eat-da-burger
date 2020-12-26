@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/jessicablank/eat-da-burger.git"
   },
-  "keywords": [],
+  "keywords": ["mySQL", "handlebars", "Bob's Burgers"],
   "author": "Jessica Blankemeier",
   "license": "MIT",
   "bugs": {

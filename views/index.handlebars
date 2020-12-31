@@ -30,7 +30,10 @@
             </div>
             <h3 class="card-text chalkboard">Comes with Fries</h3>
             <h4 class="card-text chalkboard">$5.95</h4>
-            <button type="button" class="btn btn-success btn-lg btn-block" type="submit" title="Order Random Burger">
+            <button type="button" class="btn btn-success btn-lg btn-block" type="submit" 
+             data-toggle="tooltip"
+              data-placement="right"
+              title="Order Random Burger">
               <i class="fa fa-check-square-o" aria-hidden="true"></i> Order this Burger</i>
             </button>
           </form>
@@ -56,7 +59,8 @@
                 <input class="form-control form-control-lg" type="text" id="br" placeholder="Example: Beyond Meat Dream"
                   name="burger_name"></input>
               </div>
-              <button class="btn btn-success btn-lg btn-block" title="Submit Burger Order" type="submit"> <i
+              <button class="btn btn-success btn-lg btn-block"  data-toggle="tooltip"
+              data-placement="bottom" title="Submit Burger Order" type="submit"> <i
                   class="fa fa-check-square-o" aria-hidden="true"></i> Place Your
                 Order!</button>
             </form>
@@ -102,7 +106,6 @@
     <div class="col-md-12">
       <div class="card-body">
         <h1 class="card-title" id="footer">Enjoy!</h1>
-        <h4 class="card-text" id="header-text">View source code on github:
           <!-- Octocat in the Corner -->
           <a
             class="github-corner"
@@ -110,12 +113,12 @@
             target="_blank"
           >
             <svg
+              data-toggle="tooltip"
+              data-placement="left"
+              title="Visit Me on GitHub"
               width="80"
               height="80"
               viewBox="0 0 250 250"
-              data-toggle="tooltip"
-              data-placement="bottom"
-              title="Visit Me on GitHub"
             >
               <path d="M0 0h250v250" />
               <path
@@ -131,10 +134,10 @@
               />
             </svg>
           </a>
-          <a
-            href="https://github.com/jessicablank/eat-da-burger" aria-label="link to source code on github"
-            target="_blank" rel="noopener"> https://github.com/jessicablank/eat-da-burger</a> </h4>
         <h5 class="card-text" id="header-text">Learn more about Bob's Burgers:<a
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Visit Fox.com"
             href="https://www.fox.com/bobs-burgers/" aria-label="link to source Bob's Burgers info on fox.com"
             target="_blank" rel="noopener"> https://www.fox.com/bobs-burgers</a> </h5>
       </div>

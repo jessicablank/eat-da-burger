@@ -1,7 +1,7 @@
 function getBurger(){
   const randomBurgerOutput= document.getElementById("randomBurgerOutput");
   
-//Add burger or Belcher names in alphabetical order please!
+// ≧◡≦ Add burger or Belcher names in alphabetical order please!
 const RandomBurgerNames= [
   "A Leek of Their Own",
   "All In A Glaze Work",
@@ -58,6 +58,7 @@ const RandomBurgerNames= [
     "Gene",
     "Gloria",
     "Linda",
+    "Teddy",
     "Tina",
   ]
   
@@ -66,7 +67,7 @@ const RandomBurgerNames= [
   
   let currentRandomBurger = RandomBurgerNames[Math.floor(Math.random()*RandomBurgerNames.length)]
   let currentRandomBelcher = belcherNames[Math.floor(Math.random()*belcherNames.length)]
-  console.log(currentRandomBelcher +" Recommends the " + currentRandomBurger + " Burger")
+  console.log(`${currentRandomBelcher} Recommends the ${currentRandomBurger} Burger`)
   randomBurgerOutput.value=currentRandomBurger;
 }
 

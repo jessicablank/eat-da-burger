@@ -12,7 +12,7 @@ const RandomBurgerNames= [
   "Butterface",
   "Beyond Meat Dream",
   "Charbroil Fair",
-  "Colonel Mustard with the Trip in the Kitchen",
+  "Colonel Mustard with the Tripe in the Kitchen",
   "Curd-fect Strangers",
   "Edamame Dearest",
   "Enoki Dokie Burger",
